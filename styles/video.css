@@ -45,17 +45,27 @@
       overflow: hidden;
       display: -webkit-box;
       -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
-      -line-clamp:2;
-    }
+      -webkit-line-clamp:2;
+    }  
   }
   @media (max-width:500px) {
     .video-grid
     {
       grid-template-columns: 1fr;
     }
+  }
+  @media (min-width:1440px) {
+    .video-title
+    {
+      font-size: 24px;
+    }
+    .video-author,
+.video-stats
+  {
+    font-size: 16px;
+  }
 }
-  .video-time{
+.video-time{
     position: absolute;
     background-color: black;
     color: white;
