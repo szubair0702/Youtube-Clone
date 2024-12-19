@@ -42,12 +42,11 @@
     }
     
     .video-title{
-      text-overflow: ellipsis;
       overflow: hidden;
-      white-space: nowarp;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
+      -line-clamp:2;
     }
   }
   @media (max-width:500px) {
