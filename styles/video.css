@@ -35,6 +35,27 @@
     column-gap: 16px;
     row-gap: 40px;
   }
+  @media (max-width:750px) {
+    .video-grid
+    {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .video-title{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowarp;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+  }
+  @media (max-width:500px) {
+    .video-grid
+    {
+      grid-template-columns: 1fr;
+    }
+}
   .video-time{
     position: absolute;
     background-color: black;
